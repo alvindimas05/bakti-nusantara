@@ -36,12 +36,13 @@
           <a
             class="w-fit"
             href="minecraft:?addExternalServer=Bakti Nusantara|baktinusantaramc.jacktor.com:7061"
-            ><button class="border-2 px-4 pb-1 pt-4 rounded md:text-lg"
+            ><button
+              class="border-2 px-4 py-2 md:pb-1 md:pt-4 rounded md:text-lg"
               >Join Sekarang!</button
             ></a
           >
         </div>
-        <p class="mt-10 text-xs md:text-sm">
+        <p class="mt-5 md:mt-10 text-xs md:text-sm">
           Tidak bisa join? Kamu bisa join secara manual melalui server address
           dan port berikut.
         </p>
@@ -63,8 +64,10 @@
             >
           </div>
         </div>
-        <p class="md:text-lg mt-6">Minecraft Bedrock Edition 1.20.40+</p>
-        <div class="grid grid-cols-[repeat(2,max-content)]">
+        <p class="text-sm md:text-lg mt-3 md:mt-6">
+          Minecraft Bedrock Edition 1.20.40+
+        </p>
+        <div class="grid grid-cols-[repeat(2,max-content)] mt-2 md:mt-0">
           <div class="hidden md:grid items-center mt-3 md:text-lg">
             <span>Server Address :</span>
             <span class="mt-3">Port :</span>
@@ -73,7 +76,9 @@
             <div
               class="border px-3 text-center rounded-tl rounded-bl grid grid-cols-[repeat(2,min-content)] w-fit h-fit md:ms-2"
             >
-              <p class="mt-4 mb-1">{addressBedrock}</p>
+              <p class="my-2 md:mt-4 md:mb-1 text-sm md:text-md">
+                {addressBedrock}
+              </p>
               <button
                 class="ms-3 ps-3 border-l"
                 on:click={() => copy(addressBedrock)}
@@ -83,7 +88,9 @@
             <div
               class="border px-3 text-center rounded-tl rounded-bl grid grid-cols-[repeat(2,min-content)] w-fit h-fit md:ms-2 mt-3"
             >
-              <p class="mt-4 mb-1">{portBedrock}</p>
+              <p class="my-2 md:mt-4 md:mb-1 text-sm md:text-md">
+                {portBedrock}
+              </p>
               <button
                 class="ms-3 ps-3 border-l"
                 on:click={() => copy(portBedrock)}
