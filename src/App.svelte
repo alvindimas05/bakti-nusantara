@@ -76,7 +76,7 @@
             <div
               class="border px-3 text-center rounded-tl rounded-bl grid grid-cols-[repeat(2,min-content)] w-fit h-fit md:ms-2"
             >
-              <p class="my-2 md:mt-4 md:mb-1 text-sm md:text-md">
+              <p class="my-2 md:mt-4 md:mb-1 text-sm md:text-lg">
                 {addressBedrock}
               </p>
               <button
@@ -88,7 +88,7 @@
             <div
               class="border px-3 text-center rounded-tl rounded-bl grid grid-cols-[repeat(2,min-content)] w-fit h-fit md:ms-2 mt-3"
             >
-              <p class="my-2 md:mt-4 md:mb-1 text-sm md:text-md">
+              <p class="my-2 md:mt-4 md:mb-1 text-sm md:text-lg">
                 {portBedrock}
               </p>
               <button
