@@ -23,7 +23,9 @@
   <div
     class="relative top-0 left-0 bg-black w-full h-full bg-opacity-50 grid md:grid-cols-[70%_30%]"
   >
-    <div class="grid items-center w-full md:w-auto md:p-10 box-border">
+    <div
+      class="grid items-center w-full md:w-auto mt-[-10rem] md:p-10 box-border"
+    >
       <div class="w-screen md:w-auto border-box px-5 pb-5 md:p-0">
         <p class="w-full text-sm md:text-lg">
           Halo semuanya, kabar baik untuk kita semua. Server Minecraft kami
@@ -105,7 +107,7 @@
       class="grid items-center justify-items-center mt-5 md:mt-0 order-first w-screen md:w-auto md:order-last"
     >
       <img
-        class="rounded-md w-[70%] md:w-[90%]"
+        class="rounded-md w-[60%] md:w-[90%]"
         alt="Logo Banu"
         src={logoBanu}
       />
