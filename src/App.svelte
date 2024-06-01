@@ -24,7 +24,7 @@
     class="relative top-0 left-0 bg-black w-full h-full bg-opacity-50 grid md:grid-cols-[70%_30%]"
   >
     <div class="grid items-center w-full md:w-auto md:p-10 box-border">
-      <div class="w-screen border-box px-5 pb-5 md:p-0">
+      <div class="w-screen md:w-auto border-box px-5 pb-5 md:p-0">
         <p class="w-full text-sm md:text-lg">
           Halo semuanya, kabar baik untuk kita semua. Server Minecraft kami
           <b>Rutinitas Pemain Minecraft</b> atau sekarang dikenal sebagai
