@@ -1,6 +1,7 @@
 <script lang="ts">
   import Fa from "svelte-fa";
   import { faClipboard } from "@fortawesome/pro-regular-svg-icons";
+  import logoBanu from "./assets/logo-banu.jpg";
 </script>
 
 <div class="w-screen h-screen p-32 relative">
@@ -71,11 +72,7 @@
       </div>
     </div>
     <div class="grid items-center">
-      <img
-        class="rounded-md w-[90%]"
-        alt="Logo Banu"
-        src="/assets/logo-banu.jpg"
-      />
+      <img class="rounded-md w-[90%]" alt="Logo Banu" src={logoBanu} />
     </div>
   </div>
 </div>
