@@ -17,6 +17,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
 
+      - name: Set project as testing
+        run: |
+          touch .env
+          echo VITE_NODE_ENV=testing >> .env
+
       - name: Install and build project
         run: |
           npm install
