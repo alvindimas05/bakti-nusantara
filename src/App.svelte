@@ -2,7 +2,8 @@
   import Fa from "svelte-fa";
   import Notify from "simple-notify";
   import { faClipboard } from "@fortawesome/pro-regular-svg-icons";
-  import logoBanu from "./assets/logo-banu.jpg";
+  import logoBaktiNusantara from "./assets/logo-bakti-nusantara.jpg";
+  import Nav from "./Nav.svelte";
 
   const addressJava = "baktinusantaramc.jacktor.com:7061";
   const addressBedrock = "baktinusantaramc.jacktor.com";
@@ -16,7 +17,10 @@
   }
 </script>
 
-<div class="w-screen h-screen md:p-16 lg:p-32 relative">
+<Nav />
+<div
+  class="w-screen h-screen md:p-16 lg:p-32 relative pt-10 md:pt-0 box-border"
+>
   <div
     class="absolute top-0 left-0 w-full h-full bg-banu bg-no-repeat bg-cover blur-md"
   ></div>
@@ -54,7 +58,7 @@
             <span>Server Address :</span>
           </div>
           <div
-            class="border px-3 text-center rounded-tl rounded-bl grid-cols-[repeat(2,min-content)] w-fit ms-2 hidden md:grid"
+            class="border px-3 text-center rounded grid-cols-[repeat(2,min-content)] w-fit ms-2 hidden md:grid"
           >
             <p class="mt-4 mb-1">{addressJava}</p>
             <button
@@ -74,7 +78,7 @@
           </div>
           <div>
             <div
-              class="border px-3 text-center rounded-tl rounded-bl grid grid-cols-[repeat(2,min-content)] w-fit h-fit md:ms-2"
+              class="border px-3 text-center rounded grid grid-cols-[repeat(2,min-content)] w-fit h-fit md:ms-2"
             >
               <p class="my-2 md:mt-4 md:mb-1 text-sm md:text-lg">
                 {addressBedrock}
@@ -86,7 +90,7 @@
               >
             </div>
             <div
-              class="border px-3 text-center rounded-tl rounded-bl grid grid-cols-[repeat(2,min-content)] w-fit h-fit md:ms-2 mt-3"
+              class="border px-3 text-center rounded grid grid-cols-[repeat(2,min-content)] w-fit h-fit md:ms-2 mt-3"
             >
               <p class="my-2 md:mt-4 md:mb-1 text-sm md:text-lg">
                 {portBedrock}
@@ -107,7 +111,7 @@
       <img
         class="rounded-md w-[60%] md:w-[90%]"
         alt="Logo Banu"
-        src={logoBanu}
+        src={logoBaktiNusantara}
       />
     </div>
   </div>
