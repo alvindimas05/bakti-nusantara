@@ -22,7 +22,7 @@
   class="w-screen h-screen md:p-16 lg:p-32 relative pt-10 md:pt-0 box-border"
 >
   <div
-    class="absolute top-0 left-0 w-full h-full bg-banu bg-no-repeat bg-cover blur-md"
+    class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover blur-md"
   ></div>
   <div
     class="relative top-0 left-0 bg-black w-full h-full bg-opacity-50 flex flex-col md:grid md:grid-cols-[70%_30%]"
