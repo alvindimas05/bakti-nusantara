@@ -7,6 +7,11 @@
     src: url(assets/Minecraftia-Regular.ttf);
 }
 
+@font-face {
+    font-family: Minecraft;
+    src: url(assets/Minecraftia-Regular.ttf);
+}
+
 * {
     font-family: Minecraftia, sans-serif;
     @apply text-white;
@@ -15,4 +20,9 @@
 .bg-main {
     background-position: center;
     background-image: url(./assets/background-main.webp);
+}
+
+.bg-creators {
+    background-position: center;
+    background-image: url(./assets/background-creators.jpg);
 }

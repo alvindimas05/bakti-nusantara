@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
@@ -28,6 +28,7 @@
     "clipboard": "^2.0.11",
     "sass": "^1.77.4",
     "simple-notify": "^1.0.4",
+    "skinview3d": "^3.0.1",
     "svelte-fa": "^4.0.2",
     "vite-plugin-css-injected-by-js": "^3.5.1"
   },
