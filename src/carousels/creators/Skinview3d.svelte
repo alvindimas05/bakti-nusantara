@@ -23,7 +23,7 @@
             skin,
         });
         if (!show && skinViewer != undefined) {
-            setTimeout(() => skinViewer.dispose(), 500);
+            skinViewer.dispose();
             return;
         }
         skinViewer.autoRotate = autoRotate;

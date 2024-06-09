@@ -14,6 +14,8 @@
     let carousel: HTMLDivElement;
 
     onMount(() => {
+        carousel.scrollTo(0, 0);
+
         const childCount = carousel.childElementCount - 3;
         var currentChild = 0;
         setInterval(() => {
@@ -35,7 +37,7 @@
 
 <div
     bind:this={carousel}
-    class="carousel rounded w-full h-[17.5rem] md:h-[20rem]"
+    class="carousel rounded w-full h-[17.5rem] md:h-[20rem] overflow-hidden"
 >
     <CarouselItem alt="Trading Hall" src={tradingHall} />
     <CarouselItem alt="Crates Dungeon" src={cratesDungeon} />

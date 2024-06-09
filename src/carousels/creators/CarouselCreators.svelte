@@ -1,5 +1,6 @@
 <script lang="ts">
     import Skinview3d from "./Skinview3d.svelte";
+    import { getGPUTier } from "detect-gpu";
 
     import Reyya from "$assets/creators/Reyya.jpeg";
     import Nikashi from "$assets/creators/Nikashi33.png";
@@ -34,6 +35,11 @@
 
         carouselCreators.scrollBy(scrollRange, 0);
     }
+
+    async function checkGpu() {
+        const gpuTier = await getGPUTier();
+        return gpuTier.tier < 2;
+    }
 </script>
 
 {#if /Android|iPhone/i.test(navigator.userAgent)}
@@ -51,6 +57,7 @@
             <span class="text-3xl me-4">&gt;</span>
         </button>
         <div class="carousel w-full mt-7 py-3" bind:this={carouselCreators}>
+            <!-- {#await checkGpu() then optimize} -->
             <Skinview3d
                 width={200}
                 height={300}
@@ -58,6 +65,7 @@
                 nameTag="Nikashi33"
                 role="Server Owner"
                 autoRotate={false}
+                show={currentCreator == 0}
             />
             <Skinview3d
                 width={200}
@@ -66,6 +74,7 @@
                 nameTag="Jacktor29"
                 role="Technical Operator"
                 autoRotate={false}
+                show={currentCreator == 1}
             />
             <Skinview3d
                 width={200}
@@ -74,7 +83,9 @@
                 nameTag="Reyya"
                 role="Dev Operator"
                 autoRotate={false}
+                show={currentCreator == 2}
             />
+            <!-- {/await} -->
         </div>
     </div>
 {:else}
