@@ -4,24 +4,13 @@
   import { faClipboard } from "@fortawesome/pro-regular-svg-icons";
   import logoBaktiNusantara from "./assets/logo-bakti-nusantara.jpg";
   import Nav from "./Nav.svelte";
-  import Skinview3d from "./Skinview3d.svelte";
-  // import Carousel from "svelte-carousel";
-
-  import tradingHall from "./assets/carousel/trading-hall.jpeg";
-  import cratesDungeon from "./assets/carousel/crates-dungeon.jpeg";
-  import bedwars from "./assets/carousel/bedwars.jpeg";
-  import economic from "./assets/carousel/economic.png";
-  import buildBattle from "./assets/carousel/build-battle.png";
-  import market from "./assets/carousel/market.png";
-  import clan from "./assets/carousel/clan.png";
-  import CarouselItem from "./assets/CarouselItem.svelte";
-
-  import Reyya from "./assets/creators/Reyya.jpeg";
-  import Nikashi from "./assets/creators/Nikashi33.png";
-  import Jacktor from "./assets/creators/Jacktor29.png";
+  import CarouselFeaturing from "./carousels/featuring/CarouselFeaturing.svelte";
+  import CarouselCreators from "./carousels/creators/CarouselCreators.svelte";
 
   const addressJava = "baktinusantara.xyz";
-  const addressBedrock = "baktinusantaramc.jacktor.com";
+
+  const nameBedrock = "Bakti Nusantara";
+  const addressBedrock = "play.baktinusantara.xyz";
   const portBedrock = "7061";
 
   function copy(text: string) {
@@ -52,7 +41,7 @@
         <div class="grid justify-items-center w-full mt-3 md:block md:mt-0">
           <a
             class="w-fit"
-            href="minecraft:?addExternalServer=Bakti Nusantara|baktinusantaramc.jacktor.com:7061"
+            href={`minecraft:?addExternalServer=${nameBedrock}|${addressBedrock}:${portBedrock}`}
             ><button
               class="border-2 px-4 py-2 md:pb-1 md:pt-4 rounded md:text-lg"
               >Join Sekarang!</button
@@ -138,52 +127,13 @@
       <h1 class="text-center text-2xl md:text-3xl text-bold my-10">
         Featuring
       </h1>
-      <div class="carousel rounded w-full h-[17.5rem] md:h-[20rem]">
-        <CarouselItem alt="Trading Hall" src={tradingHall} />
-        <CarouselItem alt="Crates Dungeon" src={cratesDungeon} />
-        <CarouselItem alt="Bedwars" src={bedwars} />
-        <CarouselItem alt="Economic" src={economic} />
-        <CarouselItem alt="Build Battle" src={buildBattle} />
-        <CarouselItem alt="Market" src={market} />
-        <CarouselItem alt="Clan" src={clan} />
-      </div>
-      <!-- <Carousel autoplay particlesToShow={3} dots={false} arrows={false}>
-        <CarouselItem alt="Trading Hall" src={tradingHall} />
-        <CarouselItem alt="Crates Dungeon" src={cratesDungeon} />
-        <CarouselItem alt="Bedwars" src={bedwars} />
-        <CarouselItem alt="Economic" src={economic} />
-        <CarouselItem alt="Build Battle" src={buildBattle} />
-        <CarouselItem alt="Market" src={market} />
-        <CarouselItem alt="Clan" src={clan} />
-      </Carousel> -->
+      <CarouselFeaturing />
     </div>
     <div class="py-5 md:px-10 md:py-20">
       <h1 class="text-center text-2xl md:text-3xl text-bold">
         Meet the Creators!
       </h1>
-      <div class="grid grid-cols-3 mt-7">
-        <Skinview3d
-          width={200}
-          height={300}
-          skin={Jacktor}
-          nameTag="Jacktor29"
-          role="Technical Operator"
-        />
-        <Skinview3d
-          width={200}
-          height={300}
-          skin={Nikashi}
-          nameTag="Nikashi33"
-          role="Server Owner"
-        />
-        <Skinview3d
-          width={200}
-          height={300}
-          skin={Reyya}
-          nameTag="Reyya"
-          role="Dev Operator"
-        />
-      </div>
+      <CarouselCreators />
     </div>
   </div>
 </div>

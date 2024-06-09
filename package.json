@@ -30,7 +30,8 @@
     "simple-notify": "^1.0.4",
     "skinview3d": "^3.0.1",
     "svelte-fa": "^4.0.2",
-    "vite-plugin-css-injected-by-js": "^3.5.1"
+    "vite-plugin-css-injected-by-js": "^3.5.1",
+    "vite-tsconfig-paths": "^4.3.2"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "4.9.5"
