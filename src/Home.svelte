@@ -129,9 +129,9 @@
         </div>
     </div>
 </div>
-<div class="relative">
+<div class="relative text-white">
     <div
-        class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover blur-md opacity-35 bg-creators"
+        class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover blur-md opacity-25 bg-creators"
     ></div>
     <div class="relative">
         <div class="py-5 md:p-10">
