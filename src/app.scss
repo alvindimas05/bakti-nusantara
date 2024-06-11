@@ -14,12 +14,16 @@
 
 * {
     font-family: Minecraftia, sans-serif;
-    @apply text-white;
 }
 
-.bg-main {
+.bg-main-light {
     background-position: center;
-    background-image: url(./assets/background-main.webp);
+    background-image: url(./assets/background-main-light.png);
+}
+
+.bg-main-dark {
+    background-position: center;
+    background-image: url(./assets/background-main-dark.webp);
 }
 
 .bg-creators {

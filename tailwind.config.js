@@ -6,7 +6,7 @@ export default {
     require('daisyui')
   ],
   daisyui: {
-    themes: ["night"]
+    themes: ["retro", "night"]
   }
 }
 

@@ -11,7 +11,9 @@
     const maxCreator = 2;
     let currentCreator = 0;
 
-    onMount(() => carouselCreators.scrollTo(0, 0));
+    onMount(() => {
+        if (carouselCreators != undefined) carouselCreators.scrollTo(0, 0);
+    });
     function changeCreator(inc: boolean) {
         let scrollRange =
             carouselCreators.getBoundingClientRect().width * (inc ? 1 : -1);
